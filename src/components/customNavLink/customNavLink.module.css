@@ -1,0 +1,44 @@
+.item a {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 208px;
+    height: 40px;
+    border-radius: 8px;
+    color: #3B3B3B;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    position: relative;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.item a.itemActive {
+    width: 208px;
+    border-color: #3B3B3B;
+    background-color: #3B3B3B;
+    color: white;
+    box-shadow: 0px 3px 8px 0px #0000001F;
+}
+
+.item .icon svg {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    width: 16px;
+    height: 16px;
+}
+
+.item a svg path {
+    stroke: #3B3B3B;
+}
+
+.item a.itemActive svg path {
+    stroke: white;
+}
