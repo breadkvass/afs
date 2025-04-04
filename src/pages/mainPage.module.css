@@ -1,4 +1,96 @@
 .main {
     display: flex;
     flex-direction: row;
+    width: calc(100vw - 48px);
+    overflow-x: hidden;
+    background-color: #E5E5E5;
+    min-height: 100vh;
+}
+
+.content {
+    width: 640px;
+    margin: 40px auto 0 auto;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.backButton {
+    padding: 6px;
+    position: absolute;
+    top: 4px;
+    left: -64px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.backButton:hover {
+    opacity: 0.8;
+}
+
+.errorContainer {
+    width: 100%;
+    margin: 80px auto;
+    padding: 24px;
+    background: #FFEBEE;
+    border-radius: 8px;
+    border: 1px solid #FFCDD2;
+    text-align: center;
+}
+
+.errorContainer h2 {
+    margin: 0 0 12px 0;
+    color: #B71C1C;
+    font-size: 20px;
+}
+
+.errorContainer p {
+    color: #D32F2F;
+    margin: 0 0 16px 0;
+}
+
+.loadingContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    border: 3px solid #F3F3F3;
+    border-top: 3px solid #1976D2;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 16px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.retryButton {
+    background: #1976D2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.retryButton:hover {
+    background: #1565C0;
+}
+
+.backButtonText {
+    display: none; /* Скрываем текст для мобильной версии */
 }
