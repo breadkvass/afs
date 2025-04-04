@@ -1,0 +1,31 @@
+.button {
+    padding: 4px 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    height: 28px;
+}
+
+.label {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+    text-align: center;
+    vertical-align: middle;
+    color: #3B3B3B;
+}
+
+.button svg {
+    width: 16px;
+    height: 16px;
+}
+
+.button p {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}

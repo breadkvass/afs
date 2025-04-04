@@ -1,0 +1,131 @@
+.card {
+    width: calc(100% - 48px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 16px;
+    padding: 24px;
+    background-color: white;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, .8);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.info {
+    display: column;
+    gap: 2px;
+}
+
+.agreement {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.value {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.agreement span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+    gap: 12px;
+}
+
+
+.label {
+    width: 160px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    vertical-align: middle;
+    color: rgba(0, 0, 0, .5)
+}
+
+
+.info p {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.photos {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.photoContainer {
+    position: relative;
+    width: 144px;
+    height: 108px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.photo {
+    width: 100%;
+    object-fit: cover;
+}
+
+.deletePhotoButton {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.12);
+    background-color: #3B3B3B;
+    width: 28px;
+    height: 28px;
+}
+
+.deletePhotoButton svg {
+    width: 16px;
+    height: 16px;
+}
+
+.deletePhotoButton svg path {
+    stroke: white;
+}
