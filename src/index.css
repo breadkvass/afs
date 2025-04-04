@@ -15,6 +15,7 @@ body {
   display: flex;
   background-color: white;
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 p, ul, li, h1, h2, h3 {
